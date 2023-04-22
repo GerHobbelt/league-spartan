@@ -26,6 +26,23 @@ Names
 
 It’s worth noting that you don’t need to use the variable version to get all 8 styles. The static OTF and TTF files (in their respective folders) will work and are simply named *League Spartan*.
 
+Build the font
+--------------
+
+You can build the font locally, after cloning this repo.
+    
+1. At the root of your local clone (cd path/to/local/clone), create a virtual environment: python3 -m venv env
+    
+2. Activate the virtual env: source env/bin/activate
+    
+3. Install gftools (or the requirements) in the virtual env: pip install gftools
+    
+4. go to the "sources" directory and from the terminal, run : gftools builder LeagueSpartan.glyphs
+    
+5. There! you will find the fonts in the fonts directory.
+
+Don't forget to alway activate your virtual environment before running gftools builder.
+
 How-to
 ------
 
